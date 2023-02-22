@@ -11,18 +11,17 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
-    <link rel="stylesheet" type="text/css" href="css/iofrm-theme23.css">
-    
+    <link rel="stylesheet" type="text/css" href="css/iofrm-theme23.css">   
 </head>
 <body>
-    <div class="form-body on-top-mobile">
-        <div class="website-logo">
+<div class="form-body on-top-mobile" >
+        <div class="website-logo" >
                     <div><img src="https://i.postimg.cc/hGBKT07K/logo-removebg-preview.png" alt="" style="width:200px;"></div>
         </div>
         <div class="row">
-            <div class="img-holder">
-                <div class="bg"></div>
-                <div class="info-holder simple-info">
+            <div class="img-holder" >
+                <div class="bg" ></div>
+                <div class="info-holder simple-info" >
                     <div><img src="image-reg/graphic6.svg" alt=""></div>
                     <div><h3>Registrasi</h3></div>
                     <div><p>Masukkan data yang sesuai untuk mendaftarkan desa anda</p></div>
@@ -31,11 +30,12 @@
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-                        <form style="margin-top: 90px;" action="/register" method="POST">
+                        <div class="form-items" >
+                        <form style="margin-top: 15px;" action="/register" method="POST">
                             @csrf
                             <div class="row">
                                 @if ($errors->has('username'))
-                                    <div class="" style="font-size:16px">{{ $errors->first('username') }}</div>
+                                    <div class="" style="font-size:16px;">{{ $errors->first('username') }}</div>
                                 @endif
                                 <div class="col-12">
                                     <input type="text" value="{{old('username')}}"  class="form-control @error('username') is-invalid @enderror " placeholder="Nama Desa" name="username">
@@ -120,7 +120,7 @@
                 </div>
             </div>
         </div>
-    </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

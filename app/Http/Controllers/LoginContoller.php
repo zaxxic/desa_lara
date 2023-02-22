@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 class LoginContoller extends Controller
 
 {
+    public function tampil()
+    {
+        return view('reg.login');
+    }
+
     public function store(Request $request)
     {
         $request->validate([
@@ -14,8 +19,8 @@ class LoginContoller extends Controller
             'password' => 'required|min:4',
             // Aturan validasi lainnya
         ], [
-            'email.unique' => 'email salah',
-            'password.required' => 'Isi password salah'
+            'email.unique' => 'email yang anda isikan salah',
+            'password.required' => 'password yang anda masukkan salah'
             // Pesan error lainnya
         ]);
         return redirect('/login'); 
@@ -23,15 +28,23 @@ class LoginContoller extends Controller
     }
 
 
-    public function tampil()
+    public function storee(Request $request)
 {
-    return view('reg.login');
+
+   $validateData = $request->validate([
+
+
+        'email'=>'required|email:dns:min3',
+        'password'=>'required|min:4|max:200',
+
+    ]);
+
+    $kredensial=$validateData['password'] = bcrypt($validateData['password']);
+
+//  return $request->all(); 
+login::create($validateData);
+
+return redirect('/register'); 
+}
 }
 
-
-
-
-
-
-
-}

@@ -35,24 +35,24 @@ class RegisterController extends Controller
     // Proses data
 }
 
-    public function storee(Request $request)
-{
+//     public function storee(Request $request)
+// {
 
-   $validateData = $request->validate([
+//    $validateData = $request->validate([
 
-        'username'=>'required|max:200|min:4',
-        'email'=>'required|email:dns:min3',
-        'password'=>'required|min:4|max:200',
-        'kodepos'=>'required|min:4|max:200',
-        'password'=>'required|min:4|max:200',
-        'gambar'=>'required'
-    ]);
+//         'username'=>'required|max:200|min:4',
+//         'email'=>'required|email:dns:min3',
+//         'password'=>'required|min:4|max:200',
+//         'kodepos'=>'required|min:4|max:200',
+//         'password'=>'required|min:4|max:200',
+//         'gambar'=>'required'
+//     ]);
 
-    $kredensial=$validateData['password'] = bcrypt($validateData['password']);
+//     $kredensial=$validateData['password'] = bcrypt($validateData['password']);
 
-//  return $request->all(); 
-register::create($validateData);
+// //  return $request->all(); 
+// register::create($validateData);
 
-return redirect('/login'); 
-}
+// return redirect('/login'); 
+// }
 }
