@@ -33,12 +33,26 @@
                         <div class="form-items" style="margin-left: 250px;">
                             <h3>Login</h3>
                         </div>
-                        <form>
+                        <form method="post" action="/login">
+                            @csrf
+
                             <div class="row">
+                                @if ($errors->has('email'))
+                                <div class=""style="font-size: 16x">{{ $errors->first('email') }}</div>
+                                @endif
                                 <div class="col-12">
-                                    <input type="text" class="form-control" placeholder="Email Desa" name="email">
+                                    <input type="text" class="form-control" placeholder="Email Desa" name="email">                                
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                @if ($errors->has('password'))
+                                <div class=""style="font-size: 16x">{{ $errors->first('password') }}</div>
+                                @endif
+                                <div class="col-12">
                                     <input type="text" class="form-control" placeholder="Password" name="password">
                                 </div>
+                                
                             </div>
                             <div class="row top-padding">
                                 <div class="col-12 col-sm-6">
@@ -46,7 +60,7 @@
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="form-button text-right">
-                                        <button id="submit" type="submit" class="ibtn less-padding" style="background-color: #F26522; color: #ffffff"><a href="../admin-desa/dashboard.html" style="text-decoration: none; color: #ffffff">Login</a></button>
+                                        <button id="submit" type="submit" class="ibtn less-padding" style="background-color: #F26522; color: #ffffff"><a style="text-decoration: none; color: #ffffff">Login</a></button>
                                     </div>
                                 </div>
                             </div>
