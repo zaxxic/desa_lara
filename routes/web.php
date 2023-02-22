@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +21,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth:sanctum','verified','cekrole'])->group(function(){
 
 });
+
+Route::get('/about',[AboutController::class, 'about'])->name('about');
+Route::get('/contact',[ContactController::class, 'contact'])->name('contact');
