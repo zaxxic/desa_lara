@@ -18,9 +18,8 @@ class LocationSeeder extends Seeder
             'provinsi'  => 'Jatim',
             'kabupaten' => 'Malang',
             'kecamatan' => 'Singosari',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-
+            'created_at'=> Carbon::now(),
+            'updated_at'=> Carbon::now()
         ]);
     }
 }

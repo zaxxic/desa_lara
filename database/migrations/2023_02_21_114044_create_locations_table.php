@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('provinsi');
             $table->string('kabupaten');
             $table->string('kecamatan');
+            $table->timestamps();
         });
     }
 

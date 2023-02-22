@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,6 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum','verified','cekrole'])->group(function(){
 
 });
+
+Route::get('/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
+
