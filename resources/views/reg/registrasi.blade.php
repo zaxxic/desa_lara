@@ -8,10 +8,10 @@
     <title>DESA.COM</title>
     
 <link href="https://i.postimg.cc/wj308LVk/images.png" rel="shortcut icon" type="image/png">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
-    <link rel="stylesheet" type="text/css" href="css/iofrm-theme23.css">   
+    <link rel="stylesheet" type="text/css" href="reg/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="reg/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="reg/css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="reg/css/iofrm-theme23.css">   
 </head>
 <body>
 <div class="form-body on-top-mobile" >
@@ -22,7 +22,7 @@
             <div class="img-holder" >
                 <div class="bg" ></div>
                 <div class="info-holder simple-info" >
-                    <div><img src="image-reg/graphic6.svg" alt=""></div>
+                    <div><img src="reg/image-reg/graphic6.svg" alt=""></div>
                     <div><h3>Registrasi</h3></div>
                     <div><p>Masukkan data yang sesuai untuk mendaftarkan desa anda</p></div>
                 </div>
@@ -121,10 +121,10 @@
             </div>
         </div>
 </div>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<script src="reg/js/jquery.min.js"></script>
+<script src="reg/js/popper.min.js"></script>
+<script src="reg/js/bootstrap.min.js"></script>
+<script src="reg/js/main.js"></script>
 </body>
 
 <!-- Mirrored from brandio.io/envato/iofrm/html/job-app1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 07:22:43 GMT -->
