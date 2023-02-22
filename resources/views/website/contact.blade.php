@@ -132,7 +132,7 @@
         <div class="container">
           <nav id="menuzord" class="menuzord default" style="background-color: #fca311 ;">             
             <ul class="menuzord-menu">
-              <li ><a href="find_do/dash-web.html">Beranda</a>
+              <li ><a href="/dashweb">Beranda</a>
                 <li ><a href="/about">About</a>
                     <li class="active"><a href="/contact">Contact</a>
                   
